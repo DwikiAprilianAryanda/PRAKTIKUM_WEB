@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Fundamentals - Learning Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">LMS Platform</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#courses" class="nav-link">Courses</a></li>
+                    <li><a href="dashboard.html" class="nav-link" id="dashboard-link-detail" style="display: none;">Dashboard</a></li>
+                    <li><a href="#" class="nav-link" id="logout-link-detail" style="display: none;">Logout</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle-detail">🌙</button>
+        </div>
+    </header>
+
+    <section class="course-detail-section">
+        <div class="container">
+            <div class="course-header">
+                <img src="images/kelas1.jpg" alt="Web Development Fundamentals" class="course-hero-image">
+                <div class="course-info">
+                    <h1>Web Development Fundamentals</h1>
+                    <p class="course-level">Beginner Level | 10 Lessons | 20 Hours</p>
+                    <div class="course-rating">
+                        <span class="stars">★★★★★</span> (4.8/5 - 120 Reviews)
+                    </div>
+                    <div class="course-price">Free</div>
+                    <button id="enroll-detail-btn" class="btn btn-primary" data-course="web-dev">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-tabs">
+                <button class="tab-btn active" data-tab="overview">Overview</button>
+                <button class="tab-btn" data-tab="curriculum">Curriculum</button>
+                <button class="tab-btn" data-tab="instructor">Instructor</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="overview" class="tab-pane active">
+                    <h2>Course Overview</h2>
+                    <p>Learn the basics of HTML, CSS, and JavaScript to build modern websites from scratch.</p>
+                    <h3>What You'll Learn</h3>
+                    <ul>
+                        <li>Master HTML5 to create structured web content</li>
+                        <li>Style websites with CSS3 for responsive design</li>
+                        <li>Add interactivity using JavaScript basics</li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>Basic computer literacy</li>
+                        <li>A modern web browser</li>
+                        <li>Stable internet connection</li>
+                    </ul>
+                    <video controls class="preview-video">
+                        <source src="https://via.placeholder.com/640x360.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div id="curriculum" class="tab-pane">
+                    <h2>Curriculum</h2>
+                    <div class="curriculum-list">
+                        <div class="section-item">
+                            <h4>Section 1: Introduction</h4>
+                            <ul>
+                                <li>Lesson 1: Welcome</li>
+                                <li>Lesson 2: Basics</li>
+                            </ul>
+                        </div>
+                        <div class="section-item">
+                            <h4>Section 2: Advanced Topics</h4>
+                            <ul>
+                                <li>Lesson 3: Intermediate</li>
+                                <li>Lesson 4: Advanced</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="instructor" class="tab-pane">
+                    <h2>Instructor</h2>
+                    <div class="instructor-info">
+                        <img src="https://via.placeholder.com/100x100?text=Instructor" alt="Instructor" class="instructor-avatar">
+                        <h3>Dio Brando</h3>
+                        <p>Expert Web Developer with 10+ years experience. Passionate about teaching modern web technologies.</p>
+                        <div class="instructor-stats">
+                            <span>Students: 300+</span>
+                            <span>Rating: 4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="reviews" class="tab-pane">
+                    <h2>Student Reviews</h2>
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="reviewer">Pucci</span>
+                            </div>
+                            <p>"Ampun wak ini gak sia sia ikut kelasnya."</p>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <span class="stars">★★★★☆</span>
+                                <span class="reviewer">Josuke</span>
+                            </div>
+                            <p>"Baru pertama kali se-enjoy ini ikut kelas online."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2025 Learning Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

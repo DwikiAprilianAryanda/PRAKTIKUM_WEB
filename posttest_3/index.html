@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">LMS Platform</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="login.html" class="nav-link" id="login-link">Login</a></li>
+                    <li><a href="register.html" class="nav-link" id="register-link">Register</a></li>
+                    <li><a href="dashboard.html" class="nav-link" id="dashboard-link" style="display: none;">Dashboard</a></li>
+                    <li><a href="#" class="nav-link" id="logout-link" style="display: none;">Logout</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">🌙</button>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <button id="ctaBtn" class="btn btn-primary">Gabung Sekarang!</button>
+            <h1 class="section-title">Welcome to Our Learning Platform</h1>
+            <p class="hero-text">Explore a wide range of courses to enhance your skills and knowledge. Join thousands of learners today!</p>
+            <a href="#courses" class="btn btn-primary">Browse Courses</a>
+        </div>
+    </section>
+
+    <section id="courses" class="section courses-section">
+        <div class="container">
+            <h2 class="section-title" id="coursesTitle">Our Courses</h2>
+            <p class="section-text">Discover our curated selection of courses designed for all levels.</p>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <img src="images/kelas1.jpg" alt="Web Development" class="course-image">
+                    <div class="course-content">
+                        <h3 class="course-title">Web Development Fundamentals</h3>
+                        <p class="course-description">Learn the basics of HTML, CSS, and JavaScript to build modern websites from scratch.</p>
+                        <a href="web-dev-detail.html" class="btn btn-secondary view-details" data-course="web-dev">View Details</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="images/kelas2.webp" alt="Data Science" class="course-image">
+                    <div class="course-content">
+                        <h3 class="course-title">Data Science with Python</h3>
+                        <p class="course-description">Master data analysis and machine learning techniques using Python and popular libraries.</p>
+                        <a href="data-science-detail.html" class="btn btn-secondary view-details" data-course="data-science">View Details</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="images/kelas3.jpg" alt="Digital Marketing" class="course-image">
+                    <div class="course-content">
+                        <h3 class="course-title">Digital Marketing Strategy</h3>
+                        <p class="course-description">Develop comprehensive digital marketing strategies to grow your online presence and business.</p>
+                        <a href="digital-marketing-detail.html" class="btn btn-secondary view-details" data-course="digital-marketing">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-text">We are dedicated to providing high-quality online education to learners worldwide. Our platform connects expert instructors with students seeking to advance their careers and personal growth.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>Have questions? We'd love to hear from you. Reach out and we'll respond as soon as possible.</p>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" class="form-textarea" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2025 Learning Management System. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                </ul>
+            </nav>
+            <a href="https://codecanyon.net/category/php-scripts?term=learning%20management%20system" class="reference-link">Referensi</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
